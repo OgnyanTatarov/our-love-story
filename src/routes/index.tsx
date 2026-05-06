@@ -157,7 +157,7 @@ function Index() {
               poster={photo4}
               className="w-full h-full object-cover"
             >
-              <source src="/our-song.mp4" type="video/mp4" />
+              <source src={`${import.meta.env.BASE_URL}our-song.mp4`} type="video/mp4" />
               Браузърът ти не поддържа видео.
             </video>
           </div>
