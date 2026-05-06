@@ -20,10 +20,10 @@ export function CountUp() {
     return () => clearInterval(id);
   }, []);
   const items = [
-    { label: "days", value: t.days },
-    { label: "hours", value: t.hours },
-    { label: "minutes", value: t.minutes },
-    { label: "seconds", value: t.seconds },
+    { label: "дни", value: t.days },
+    { label: "часа", value: t.hours },
+    { label: "минути", value: t.minutes },
+    { label: "секунди", value: t.seconds },
   ];
   return (
     <div className="grid grid-cols-4 gap-3 md:gap-6 max-w-2xl mx-auto">

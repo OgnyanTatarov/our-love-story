@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Heart } from "lucide-react";
-import heroFlowers from "@/assets/hero-flowers.jpg";
-import couple from "@/assets/couple-1.jpg";
-import letters from "@/assets/letters.jpg";
-import cafe from "@/assets/cafe.jpg";
-import sky from "@/assets/sky.jpg";
+import photo1 from "@/assets/1FCBBFC7-5321-4D49-A172-094936175068.JPG";
+import photo2 from "@/assets/25A28196-00CB-49E9-96A9-2531338C6A37.JPG";
+import photo3 from "@/assets/5E10986C-0364-48A8-B3EB-0BB7A291EECB.JPG";
+import photo4 from "@/assets/8C7BE539-6218-4B4D-858C-2E0C9E8974C1.JPG";
 import { Petals } from "@/components/Petals";
 import { CountUp } from "@/components/CountUp";
 
@@ -35,33 +34,20 @@ function Index() {
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
-        <img
-          src={heroFlowers}
-          alt=""
-          width={1536}
-          height={1536}
-          className="absolute -top-20 -right-20 w-[60vw] max-w-[800px] opacity-90 mix-blend-multiply pointer-events-none select-none"
-        />
-        <img
-          src={heroFlowers}
-          alt=""
-          width={1536}
-          height={1536}
-          className="absolute -bottom-32 -left-24 w-[55vw] max-w-[700px] opacity-80 mix-blend-multiply pointer-events-none select-none -scale-x-100 rotate-12"
-        />
         <div className="relative z-10 text-center max-w-3xl animate-fade-up">
-          <p className="font-script text-3xl md:text-5xl text-[color:var(--rose)] mb-4">for my Simona</p>
+          <p className="font-script text-3xl md:text-5xl text-[color:var(--rose)] mb-4">за моята Симона</p>
           <h1 className="font-display text-6xl md:text-9xl leading-[0.95] text-foreground">
-            Three<br/>
-            <em className="text-[color:var(--rose)]">beautiful</em><br/>
-            months
+            Три<br />
+            <em className="text-[color:var(--rose)]">прекрасни</em>
+            <br />
+            месеца
           </h1>
           <p className="mt-8 text-lg md:text-xl text-muted-foreground italic max-w-xl mx-auto">
-            …and a lifetime of moments I never want to forget. Happy anniversary, my love.
+            …и цял живот моменти, които никога не искам да забравя. Честита годишнина, любов моя.
           </p>
           <div className="mt-12">
             <CountUp />
-            <p className="mt-4 text-xs uppercase tracking-[0.3em] text-muted-foreground">since 06 · 02 · 2026</p>
+            <p className="mt-4 text-xs uppercase tracking-[0.3em] text-muted-foreground">от 06 · 02 · 2026</p>
           </div>
         </div>
       </section>
@@ -69,8 +55,8 @@ function Index() {
       {/* LOVE LETTER */}
       <section className="relative py-32 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-script text-3xl text-[color:var(--rose)] mb-2">a letter</p>
-          <h2 className="font-display text-5xl md:text-7xl mb-12">From Ognyan, with love</h2>
+          <p className="font-script text-3xl text-[color:var(--rose)] mb-2">писмо</p>
+          <h2 className="font-display text-5xl md:text-7xl mb-12">От Огнян, с любов</h2>
         </div>
         <div className="relative max-w-2xl mx-auto">
           <div className="relative rounded-3xl bg-card/80 backdrop-blur-sm border border-[color:var(--blush)] p-10 md:p-16 shadow-[var(--shadow-soft)]">
@@ -96,26 +82,23 @@ function Index() {
       <section className="relative py-32 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="font-script text-3xl text-[color:var(--rose)] mb-2">moments</p>
-            <h2 className="font-display text-5xl md:text-7xl">Our little gallery</h2>
+            <p className="font-script text-3xl text-[color:var(--rose)] mb-2">моменти</p>
+            <h2 className="font-display text-5xl md:text-7xl">Нашата малка галерия</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             <div className="md:row-span-2 overflow-hidden rounded-3xl shadow-[var(--shadow-petal)] group">
-              <img src={couple} alt="Us" loading="lazy" width={1024} height={1280} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={photo1} alt="Симона и Огнян" loading="lazy" width={1024} height={1280} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-petal)] group">
-              <img src={letters} alt="Letters" loading="lazy" width={1024} height={1280} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={photo2} alt="Симона и Огнян" loading="lazy" width={1024} height={1280} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-petal)] group">
-              <img src={cafe} alt="Cafe" loading="lazy" width={1024} height={1280} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={photo3} alt="Симона и Огнян" loading="lazy" width={1024} height={1280} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="col-span-2 overflow-hidden rounded-3xl shadow-[var(--shadow-petal)] group">
-              <img src={sky} alt="Sky" loading="lazy" width={1024} height={1280} className="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={photo4} alt="Симона и Огнян" loading="lazy" width={1024} height={1280} className="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
           </div>
-          <p className="mt-6 text-center text-sm italic text-muted-foreground">
-            (заместваме ги с наши снимки скоро 💕)
-          </p>
         </div>
       </section>
 
@@ -123,8 +106,8 @@ function Index() {
       <section className="relative py-32 px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-20">
-            <p className="font-script text-3xl text-[color:var(--rose)] mb-2">our story</p>
-            <h2 className="font-display text-5xl md:text-7xl">A little timeline</h2>
+            <p className="font-script text-3xl text-[color:var(--rose)] mb-2">нашата история</p>
+            <h2 className="font-display text-5xl md:text-7xl">Малка времева линия</h2>
           </div>
           <div className="relative">
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[color:var(--rose)] to-transparent" />
@@ -146,8 +129,8 @@ function Index() {
       <section className="relative py-32 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <p className="font-script text-3xl text-[color:var(--rose)] mb-2">forever and a day</p>
-            <h2 className="font-display text-5xl md:text-7xl">Why I love you</h2>
+            <p className="font-script text-3xl text-[color:var(--rose)] mb-2">завинаги и още един ден</p>
+            <h2 className="font-display text-5xl md:text-7xl">Защо те обичам</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {reasons.map((r, i) => (
@@ -165,21 +148,21 @@ function Index() {
       {/* SONG / VIDEO */}
       <section className="relative py-32 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-script text-3xl text-[color:var(--rose)] mb-2">our song</p>
-          <h2 className="font-display text-5xl md:text-7xl mb-10">Press play, my love</h2>
+          <p className="font-script text-3xl text-[color:var(--rose)] mb-2">нашата песен</p>
+          <h2 className="font-display text-5xl md:text-7xl mb-10">Пусни, любов моя</h2>
           <div className="relative rounded-3xl overflow-hidden border border-[color:var(--blush)] shadow-[var(--shadow-petal)] aspect-video bg-card/80 flex items-center justify-center">
             {/* Replace src with your generated video file */}
             <video
               controls
-              poster={sky}
+              poster={photo4}
               className="w-full h-full object-cover"
             >
               <source src="/our-song.mp4" type="video/mp4" />
-              Your browser does not support video.
+              Браузърът ти не поддържа видео.
             </video>
           </div>
           <p className="mt-6 text-sm italic text-muted-foreground">
-            (качи видеото като <code className="font-mono">public/our-song.mp4</code>)
+            (качено като <code className="font-mono">our-song.mp4</code>)
           </p>
         </div>
       </section>
